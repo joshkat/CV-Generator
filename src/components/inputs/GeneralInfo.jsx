@@ -1,10 +1,16 @@
 import general_info from "../../json/GeneralInfo.json";
 import FormInput from "./FormInput.jsx";
+import PropTypes from "prop-types";
 
-export default function GeneralInfo() {
+export default function GeneralInfo({ generalInfo, setGeneralInfo }) {
   function handleInputChange(e) {
-    if (e.key === "Enter") e.preventDefault();
-    console.log(e.target.value);
+    const key = e.target.id;
+    const value = e.target.value;
+    setGeneralInfo((prevInfo) => ({
+      ...prevInfo,
+      [key]: value,
+    }));
+    console.log(generalInfo);
   }
   return (
     <>
@@ -22,11 +28,17 @@ export default function GeneralInfo() {
         <p className="input-title">Description</p>
         <textarea
           name="Description"
-          id="description"
+          id="infoDescription"
           placeholder="..."
           rows="10"
+          onChange={handleInputChange}
         ></textarea>
       </div>
     </>
   );
 }
+
+GeneralInfo.propTypes = {
+  generalInfo: PropTypes.object.isRequired,
+  setGeneralInfo: PropTypes.func.isRequired,
+};
