@@ -1,0 +1,34 @@
+.header-wrapper {
+  background-color: lightblue;
+  padding: 10px 0 10px 0;
+}
+
+.header-name {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+
+.header-about-wrapper {
+  min-height: 76px;
+}
+
+.header-about-title {
+  margin: 20px 0 0 0;
+}
+
+.header-extras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-extras span {
+  margin: 0 10px 0 10px;
+}
+
+@media screen and (width < 1000px) {
+  .header-extras {
+    font-size: small;
+  }
+}
