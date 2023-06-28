@@ -1,0 +1,39 @@
+.inputForm {
+  border: solid 1px black;
+  height: 100%;
+  width: 100%;
+  max-width: 800px;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: #eeeeee;
+}
+
+.cv-display {
+  border: solid 1px black;
+  word-break: break-all;
+  overflow: scroll;
+  overflow-x: hidden;
+  max-width: 800px;
+  height: 100%;
+  background-color: white;
+}
+
+.cv-main {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.divider {
+  width: 100px;
+}
+
+@media screen and (width < 900px) {
+  .inputForm,
+  .cv-display {
+    width: 100%;
+  }
+
+  .divider {
+    height: 100px;
+  }
+}

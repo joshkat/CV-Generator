@@ -3,7 +3,7 @@ import MainSection from "./components/MainSection.jsx";
 function App() {
   return (
     <>
-      <header>Hello</header>
+      <header>CV Generator</header>
       <div className="main-wrapper">
         <MainSection></MainSection>
       </div>
