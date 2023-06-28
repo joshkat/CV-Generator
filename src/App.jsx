@@ -22,6 +22,7 @@ function App() {
   //education state
   const [education, setEducation] = useState({
     schoolName: "",
+    gpa: "",
     city: "",
     major: "",
     date: "",

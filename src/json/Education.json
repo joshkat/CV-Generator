@@ -6,6 +6,12 @@
     "placeholder": "Harvard"
   },
   {
+    "title": "GPA",
+    "type": "number",
+    "id": "gpa",
+    "placeholder": "4.0"
+  },
+  {
     "title": "City",
     "type": "text",
     "id": "city",
