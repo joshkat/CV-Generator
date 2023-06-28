@@ -4,7 +4,11 @@ export default function ExperiencePreview({ experienceArray }) {
   return (
     <>
       {experienceArray.map((exp_obj) => (
-        <h1 key={exp_obj.id}>{exp_obj.title || "No Title"}</h1>
+        <div key={exp_obj.number}>
+          <h1>{exp_obj.title || `Job #${exp_obj.number}`}</h1>
+          <span>{exp_obj.location || `Job #${exp_obj.number}`}</span>
+          <p>{exp_obj.description || `A description...`}</p>
+        </div>
       ))}
     </>
   );
@@ -13,7 +17,7 @@ export default function ExperiencePreview({ experienceArray }) {
 ExperiencePreview.propTypes = {
   experienceArray: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      number: PropTypes.number.isRequired,
       title: PropTypes.string,
       location: PropTypes.string,
       description: PropTypes.string,

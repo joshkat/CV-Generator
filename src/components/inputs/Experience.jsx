@@ -19,7 +19,6 @@ export default function Experience({
     tempArr[index] = updatedObj;
 
     setExpArr(tempArr);
-    console.log(tempArr);
   }
   function addExperience(e) {
     e.preventDefault();
