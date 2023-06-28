@@ -37,10 +37,7 @@ function App() {
       <form className="inputForm">
         <fieldset>
           <legend>General Information</legend>
-          <GeneralInfo
-            generalInfo={generalInfo}
-            setGeneralInfo={setGeneralInfo}
-          />
+          <GeneralInfo setGeneralInfo={setGeneralInfo} />
         </fieldset>
         <fieldset>
           <legend>Education</legend>

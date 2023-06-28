@@ -2,7 +2,7 @@ import general_info from "../../json/GeneralInfo.json";
 import FormInput from "./FormInput.jsx";
 import PropTypes from "prop-types";
 
-export default function GeneralInfo({ generalInfo, setGeneralInfo }) {
+export default function GeneralInfo({ setGeneralInfo }) {
   function handleInputChange(e) {
     const key = e.target.id;
     const value = e.target.value;
@@ -10,7 +10,6 @@ export default function GeneralInfo({ generalInfo, setGeneralInfo }) {
       ...prevInfo,
       [key]: value,
     }));
-    console.log(generalInfo);
   }
   return (
     <>
@@ -39,6 +38,5 @@ export default function GeneralInfo({ generalInfo, setGeneralInfo }) {
 }
 
 GeneralInfo.propTypes = {
-  generalInfo: PropTypes.object.isRequired,
   setGeneralInfo: PropTypes.func.isRequired,
 };
