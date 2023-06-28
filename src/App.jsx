@@ -3,6 +3,7 @@ import Experience from "./components/inputs/Experience.jsx";
 import Education from "./components/inputs/Education.jsx";
 
 import GeneralInfoPreview from "./components/cv-view/GeneralInfoPreview.jsx";
+import EducationPreview from "./components/cv-view/EducationPreview.jsx";
 import ExperiencePreview from "./components/cv-view/ExperiencePreview.jsx";
 
 import { useState } from "react";
@@ -10,12 +11,20 @@ import { useState } from "react";
 function App() {
   //general info state
   const [generalInfo, setGeneralInfo] = useState({
-    firstName: "",
+    firstName: "Your Name",
     lastName: "",
     address: "",
     phoneNumber: "",
     email: "",
     infoDescription: "",
+  });
+
+  //education state
+  const [education, setEducation] = useState({
+    schoolName: "",
+    city: "",
+    major: "",
+    date: "",
   });
 
   //experience state
@@ -35,7 +44,7 @@ function App() {
         </fieldset>
         <fieldset>
           <legend>Education</legend>
-          <Education />
+          <Education setEducation={setEducation} />
         </fieldset>
         <fieldset>
           <legend>Experience</legend>
@@ -50,7 +59,7 @@ function App() {
       <div className="cv-display">
         {/* The cv-views are added within their respective input components */}
         <GeneralInfoPreview generalInfoObj={generalInfo} />
-        <div className="education">education</div>
+        <EducationPreview education={education} />
         <ExperiencePreview experienceArray={expArray} />
       </div>
     </>
