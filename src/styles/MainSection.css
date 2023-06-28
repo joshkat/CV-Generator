@@ -1,21 +1,22 @@
 .inputForm {
-  border: solid 1px black;
   height: 100%;
   width: 100%;
   max-width: 800px;
   overflow: scroll;
   overflow-x: hidden;
   background-color: #eeeeee;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .cv-display {
-  border: solid 1px black;
+  /* border: solid 1px black; */
   word-break: break-all;
   overflow: scroll;
   overflow-x: hidden;
   max-width: 800px;
   height: 100%;
   background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .cv-main {

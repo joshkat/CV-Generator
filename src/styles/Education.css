@@ -1,0 +1,18 @@
+.education-title {
+  margin-bottom: 0;
+}
+
+.education-topline {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.gpa {
+  font-weight: bold;
+}
+
+.education-bottomline {
+  display: flex;
+  justify-content: space-between;
+}
