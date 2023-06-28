@@ -11,6 +11,8 @@
 
 .header-about-wrapper {
   min-height: 76px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .header-about-title {

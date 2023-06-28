@@ -57,11 +57,14 @@ export default function MainSection() {
           />
         </fieldset>
       </form>
+      <div className="divider"></div>
       <div className="cv-display">
         {/* The cv-views are added within their respective input components */}
         <GeneralInfoPreview generalInfoObj={generalInfo} />
-        <EducationPreview education={education} />
-        <ExperiencePreview experienceArray={expArray} />
+        <div className="cv-main">
+          <EducationPreview education={education} />
+          <ExperiencePreview experienceArray={expArray} />
+        </div>
       </div>
     </>
   );
