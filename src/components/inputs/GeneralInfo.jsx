@@ -1,8 +1,9 @@
-import general_info from "../json/GeneralInfo.json";
+import general_info from "../../json/GeneralInfo.json";
 import FormInput from "./FormInput.jsx";
 
 export default function GeneralInfo() {
   function handleInputChange(e) {
+    if (e.key === "Enter") e.preventDefault();
     console.log(e.target.value);
   }
   return (

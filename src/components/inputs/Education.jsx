@@ -1,4 +1,4 @@
-import education from "../json/Education.json";
+import education from "../../json/Education.json";
 import FormInput from "./FormInput.jsx";
 
 export default function Education() {
