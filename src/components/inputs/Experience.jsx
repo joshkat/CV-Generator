@@ -1,25 +1,22 @@
-import { useState } from "react";
+import PropTypes from "prop-types";
 import FormInput from "./FormInput.jsx";
 
-export default function Experience() {
-  const [expNumber, setExpNum] = useState(2);
-  const [expArray, setExpArr] = useState([
-    { number: 1, title: "", location: "", description: "" },
-  ]);
-
+export default function Experience({
+  expNumber,
+  setExpNum,
+  expArray,
+  setExpArr,
+}) {
   //helper functions
   function handleExperienceInputChange(e) {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      return;
-    }
-
     //update the obj of the corresponding key, index is last char of string key is string - last char
     const index = parseInt(e.target.id.slice(-1)) - 1;
     const key = e.target.id.slice(0, e.target.id.length - 1);
 
-    let tempArr = expArray;
-    tempArr[index][key] = e.target.value;
+    const tempArr = [...expArray];
+    const updatedObj = { ...tempArr[index] };
+    updatedObj[key] = e.target.value;
+    tempArr[index] = updatedObj;
 
     setExpArr(tempArr);
     console.log(tempArr);
@@ -43,10 +40,6 @@ export default function Experience() {
       setExpArr(expArray.slice(0, expArray.length - 1));
     }
   }
-
-  // function renderExperienceView() {
-  //   //takes the expArr and loads it into the right side of the dom to display it to the user
-  // }
 
   return (
     <>
@@ -89,3 +82,10 @@ export default function Experience() {
     </>
   );
 }
+
+Experience.propTypes = {
+  expNumber: PropTypes.number.isRequired,
+  setExpNum: PropTypes.func.isRequired,
+  expArray: PropTypes.array.isRequired,
+  setExpArr: PropTypes.func.isRequired,
+};
