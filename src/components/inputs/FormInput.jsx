@@ -10,7 +10,7 @@ export default function FormInput({ type, title, id, placeholder, handler }) {
         id={id}
         className=""
         placeholder={placeholder === undefined ? "" : placeholder}
-        onKeyDown={handler}
+        onInput={handler}
       />
     </>
   );
