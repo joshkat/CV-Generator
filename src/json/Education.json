@@ -1,0 +1,26 @@
+[
+  {
+    "title": "School Name",
+    "type": "text",
+    "id": "schoolName",
+    "placeholder": "Harvard"
+  },
+  {
+    "title": "City",
+    "type": "text",
+    "id": "city",
+    "placeholder": "Cambridge"
+  },
+  {
+    "title": "Major",
+    "type": "text",
+    "id": "major",
+    "placeholder": "Computer Science"
+  },
+  {
+    "title": "Date of Study",
+    "type": "text",
+    "id": "date",
+    "placeholder": "Jan. 1955 - Jan. 1959"
+  }
+]

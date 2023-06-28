@@ -1,0 +1,32 @@
+[
+  {
+    "title": "First Name",
+    "type": "text",
+    "id": "firstName",
+    "placeholder": "Homer"
+  },
+  {
+    "title": "Last Name",
+    "type": "text",
+    "id": "lastName",
+    "placeholder": "Simpson"
+  },
+  {
+    "title": "Address",
+    "type": "text",
+    "id": "address",
+    "placeholder": "742 Evergreen Terrace"
+  },
+  {
+    "title": "Phone Number",
+    "type": "text",
+    "id": "phoneNumber",
+    "placeholder": "(212) 555-1234"
+  },
+  {
+    "title": "Email",
+    "type": "email",
+    "id": "email",
+    "placeholder": "homerjaysimpson@example.com"
+  }
+]

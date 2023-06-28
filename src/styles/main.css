@@ -1,0 +1,35 @@
+/* * {
+  /* border: solid 1px red; 
+} */
+
+#root {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px red;
+}
+
+.inputForm {
+  width: 30%;
+  border: solid 1px red;
+}
+
+.cv-display {
+  word-break: break-all;
+  width: 70%;
+}
+
+input {
+  border: solid 1px black;
+}
+
+@media screen and (width < 1000px) {
+  #root {
+    background-color: red;
+    flex-direction: column;
+  }
+
+  .inputForm,
+  .cv-display {
+    width: 100%;
+  }
+}
