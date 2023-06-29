@@ -32,7 +32,6 @@ export default function Experience({
   function removeExperience(e) {
     e.preventDefault();
     if (expArray.length === 1) {
-      console.log("ran");
       return;
     } else {
       setExpNum(expNumber - 1);
