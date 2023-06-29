@@ -29,7 +29,7 @@
   margin: 0 10px 0 10px;
 }
 
-@media screen and (width < 1000px) {
+@media screen and (width < 900px) {
   .header-extras {
     font-size: small;
   }

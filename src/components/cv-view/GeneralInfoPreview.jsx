@@ -10,9 +10,9 @@ export default function GeneralInfoPreview({ generalInfoObj }) {
           {name_string === " " ? "Your Name" : name_string}
         </h1>
         <div className="header-extras">
-          <span>{generalInfoObj.phoneNumber}</span>|
-          <span>{generalInfoObj.address}</span>|
-          <span>{generalInfoObj.email}</span>
+          <span>{generalInfoObj.phoneNumber || "phone"}</span>|
+          <span>{generalInfoObj.address || "address"}</span>|
+          <span>{generalInfoObj.email || "email"}</span>
         </div>
       </div>
       <div className="header-about-wrapper">

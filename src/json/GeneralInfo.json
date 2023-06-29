@@ -3,7 +3,7 @@
     "title": "First Name",
     "type": "text",
     "id": "firstName",
-    "placeholder": "Homer"
+    "placeholder": "Lisa"
   },
   {
     "title": "Last Name",
@@ -27,6 +27,6 @@
     "title": "Email",
     "type": "email",
     "id": "email",
-    "placeholder": "homerjaysimpson@example.com"
+    "placeholder": "email@example.com"
   }
 ]

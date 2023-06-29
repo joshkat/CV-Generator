@@ -26,7 +26,6 @@ export default function ExperiencePreview({ experienceArray }) {
               </>
             ))}
           </ul>
-          {console.log(exp_obj.description.split("\n"))}
         </>
       ))}
     </>

@@ -42,9 +42,6 @@ export default function Experience({
 
   return (
     <>
-      <button onClick={addExperience}>Add Experience #{expNumber}</button>
-      <br />
-      <button onClick={removeExperience}>Remove Experience</button>
       <div>
         {expArray.map((experience_object) => (
           <>
@@ -80,13 +77,20 @@ export default function Experience({
               key={"description" + experience_object.number.toString()}
               name="Description"
               id={"description" + experience_object.number.toString()}
-              placeholder="- Be sure to use bullet points&#10;- For the best effect&#10;- 2 to 3 is ideal :)"
+              placeholder="This will render out as a list so don't forget to use line breaks :)"
               rows="3"
               onChange={handleExperienceInputChange}
             ></textarea>
           </>
         ))}
       </div>
+      <button onClick={addExperience} className="add-btn">
+        Add Experience
+      </button>
+      <br />
+      <button onClick={removeExperience} className="remove-btn">
+        Remove Experience
+      </button>
     </>
   );
 }
