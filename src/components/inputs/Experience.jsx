@@ -66,6 +66,15 @@ export default function Experience({
               handler={handleExperienceInputChange}
             />
 
+            <FormInput
+              key={"year" + experience_object.number.toString()}
+              title={"Year"}
+              type="text"
+              id={"year" + experience_object.number.toString()}
+              placeholder={"2000 - Present"}
+              handler={handleExperienceInputChange}
+            />
+
             <p className="input-title">Description</p>
             <textarea
               key={"description" + experience_object.number.toString()}

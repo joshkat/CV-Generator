@@ -17,9 +17,10 @@ export default function GeneralInfoPreview({ generalInfoObj }) {
       </div>
       <div className="header-about-wrapper">
         <h3 className="header-about-title">About Me</h3>
+        <div className="title-underline"></div>
         <div>
           {generalInfoObj.infoDescription ||
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, quo, voluptates odit possimus molestias numquam ab dignissimos rerum aliquam ducimus error et. Recusandae quas repellendus laboriosam molestiae magnam excepturi neque."}
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, quo, voluptates odit possimus molestias numquam ab dignissimos rerum aliquam ducimus error et. Recusandae quas repellendus laboriosam molestiae magnam excepturi neque"}
         </div>
       </div>
     </>
