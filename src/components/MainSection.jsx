@@ -15,9 +15,9 @@ export default function MainSection() {
   const [generalInfo, setGeneralInfo] = useState({
     firstName: "Your Name",
     lastName: "",
-    address: "",
-    phoneNumber: "",
-    email: "",
+    address: "address",
+    phoneNumber: "phone",
+    email: "email",
     infoDescription: "",
   });
 
@@ -33,11 +33,12 @@ export default function MainSection() {
   //experience state
   const [expNumber, setExpNum] = useState(2);
   const [expArray, setExpArr] = useState([
-    { number: 1, title: "", location: "", description: "" },
+    { number: 1, title: "", location: "", description: "", year: "" },
   ]);
 
   return (
     <>
+      <div className="divider"></div>
       <form className="inputForm">
         <fieldset>
           <legend>General Information</legend>
@@ -66,6 +67,7 @@ export default function MainSection() {
           <ExperiencePreview experienceArray={expArray} />
         </div>
       </div>
+      <div className="divider"></div>
     </>
   );
 }
