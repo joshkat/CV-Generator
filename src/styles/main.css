@@ -61,6 +61,12 @@ header {
   scrollbar-width: thin;
 }
 
+.title-underline {
+  background-color: gray;
+  width: 100%;
+  height: 1px;
+}
+
 @media screen and (width < 900px) {
   .main-wrapper {
     flex-direction: column;

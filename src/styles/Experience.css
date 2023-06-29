@@ -1,0 +1,26 @@
+.experience-title {
+  margin-bottom: 0;
+}
+
+.job-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.exp-top-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exp-line-wrapper {
+  margin-top: 5px;
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  padding-left: 30px;
+  margin: 0;
+}

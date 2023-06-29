@@ -5,8 +5,7 @@ export default function EducationPreview({ education }) {
   return (
     <>
       <h3 className="education-title">Education</h3>
-
-      <div className="section-line"></div>
+      <div className="title-underline"></div>
       <div className="education-topline">
         <div>
           <span>{education.schoolName || "School Name"}&ensp;</span>
